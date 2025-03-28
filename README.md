@@ -1,2 +1,2 @@
-# CofeeShop
+# CoffeeShop
 Page for your coffee shop
