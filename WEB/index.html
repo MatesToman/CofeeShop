@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje kavárna</title>
+</head>
+    <body>
+        <h1>Vítejte v mé kavárně  „Dobrá káva". </h1>
+        <button onclick="pozdrav()">Klikni pro překvapení</button>
+        <p>Máme tady nejlepší kávu a dortíky.</p>
+
+        <h2>Naše menu:</h2>
+        <ul>
+            <li>Latté - 35 Kč</li>
+            <li>Cappuccino - 45 Kč</li>
+            <li>Espresso - 30 </li>
+            <li>Dortíky - 25 Kč</li>
+            <li>Sladká káva - 30 Kč</li>
+            <li>Sladký dortík - 20 Kč</li>
+            <li>Sladká káva s doručením - 40 Kč</li>
+            <img src="images/káva.webp" alt="káva" width="300">
+        </ul>
+        <h2>Naše otvírací doba:</h2>
+        <table border="1">
+            <tr>
+                <th>Den</th>
+                <th>Čas</th>
+            </tr>
+            <tr>
+                <td>Pondělí</td>
+                <td>12:00 - 16:00</td>
+            </tr>
+            <tr>
+                <td>Úterý</td>
+                <td>12:00 - 16:00</td>
+            </tr>
+            <tr>
+                <td>Středa</td>
+                <td>12:00 - 16:00</td>
+            </tr>
+            <tr>
+                <td>Čtvrtek</td>
+                <td>12:00 - 16:00</td>
+            </tr>
+            <tr>
+                <td>Pátek</td>
+                <td>12:00 - 16:00</td>
+            </tr>
+            <tr>
+                <td>Sobota</td>
+                <td>12:00 - 16:00</td>
+            </tr>
+            <tr>
+                <td>Neděle</td>
+                <td>12:00 - 16:00</td>
+            </tr>
+        </table>
+
+        <h2>Rezervace:</h2>
+        <form action="index.html" method="post">
+            <label for="name">Jméno:</label>
+            <input type="text" name="name" id="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            <label for="phone">Telefon:</label>
+            <input type="tel" name="phone" id="phone" required><br><br>
+            <label for="date">Datum:</label>
+            <input type="date" name><br><br>
+            <label for="time">Čas:</label>
+            <input type="time" name="time" required><br><br>
+            <label for="number">Počet osob:</label>
+            <input type="number" name="number" min="1" required><br><br>
+            <label for="message">Zpráva:</label>
+            <textarea name="message" id="message" cols="30" rows="10" required></textarea><br><br>
+            <input type="submit" value="Odeslat">
+        </form>
+        <script src="scripts/scripts.js"></script>
+    </body>
+</html>
